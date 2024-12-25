@@ -8,8 +8,8 @@ import java.util.Objects;
 
 public class Model {
     private final String URL = "jdbc:postgresql://localhost:5432/events_managing_system",
-    USERNAME = "user",
-    PASSWORD = "12345abc",
+    USERNAME = "postgres",
+    PASSWORD = "postgres",
     DRIVER = "org.postgresql.Driver";
 
 

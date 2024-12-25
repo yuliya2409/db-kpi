@@ -1,0 +1,35 @@
+<hibernate-configuration>
+    <session-factory>
+
+        <property name = "hibernate.dialect">
+            org.hibernate.dialect.PostgreSQLDialect
+        </property>
+
+        <property name = "hibernate.connection.driver_class">
+            org.postgresql.Driver
+        </property>
+
+        <!-- Assume test is the database name -->
+
+        <property name = "connection.url">
+            jdbc:postgresql://localhost:5432/events_managing_system
+        </property>
+
+        <property name = "connection.username">
+            user
+        </property>
+
+        <property name = "connection.password">
+            12345abc
+        </property>
+
+        <property name="show_sql">
+            true
+        </property>
+
+        <mapping class="entity.Manager"/>
+        <mapping class="entity.Venue"/>
+        <mapping class="entity.Event"/>
+        <mapping class="entity.EventsVenue"/>
+    </session-factory>
+</hibernate-configuration>
